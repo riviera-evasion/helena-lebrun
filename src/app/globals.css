@@ -35,3 +35,18 @@
 .feature-list svg{flex-shrink:0;margin-top:4px}
 @media(min-width:601px){.card-body h3{min-height:3.6em}}
 @media(max-width:600px){.card-body{padding:22px}.section-head h2,.feature-copy h2{width:100%}}
+
+/* A bright coastal backdrop for the footer, with clear navigation headings. */
+.site-footer{position:relative;isolation:isolate;background:#e1f1f7;color:var(--deep);padding:64px 0 24px}
+.site-footer::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgb(242 250 253 / 92%),rgb(235 247 251 / 82%)),url("https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=2000&q=85") center 55%/cover}
+.footer-grid{grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,1fr));align-items:start;gap:40px}
+.footer-brand{display:inline-block;font:500 clamp(30px,3vw,42px)/1.15 Georgia,serif;letter-spacing:-.6px;color:rgb(7 59 92 / 88%)}
+.footer-brand i{color:#087eaa}
+.footer-grid p{max-width:320px;margin:14px 0 0;color:#355267;font-size:14px;line-height:1.7}
+.footer-grid h4{display:table;margin:0 0 20px;padding-bottom:10px;border-bottom:2px solid #168fbd;font-size:14px;line-height:1.4;font-weight:800;letter-spacing:1.5px;color:var(--deep);text-transform:uppercase}
+.footer-grid>div:not(:first-child)>a{color:#244b60;font-size:14px;line-height:1.6;margin:12px 0}
+.footer-grid a:hover{color:#087eaa;text-decoration:underline;text-underline-offset:4px}
+.footer-grid a:focus-visible{outline:2px solid #087eaa;outline-offset:5px}
+.footer-bottom{border-top:1px solid rgb(7 59 92 / 20%);margin-top:40px;padding-top:20px;color:#355267;font-size:12px;line-height:1.6}
+@media(max-width:850px){.footer-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 24px}.footer-grid>div:first-child{grid-column:1/-1}.footer-grid p{max-width:100%}}
+@media(max-width:600px){.site-footer{padding:44px 0 22px}.footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 22px}.footer-brand{font-size:clamp(28px,8vw,36px);white-space:nowrap}.footer-grid h4{font-size:13px;letter-spacing:1px;margin-bottom:16px}.footer-grid p,.footer-grid>div:not(:first-child)>a{font-size:13px}.footer-bottom{font-size:11px;margin-top:30px}}
