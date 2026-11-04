@@ -12,3 +12,23 @@
   .section-head h2,.feature-copy h2,.page-intro h1{font-size:30px}
   .section-head p,.feature-copy p,.page-intro p,.card-body p{font-size:14px;line-height:1.7}
 }
+
+/* Consistent editorial alignment and gently outlined cards. */
+.section-head>div{min-width:0;flex:1}
+.section-head h2,.feature-copy h2,.page-intro h1{max-width:540px;text-wrap:pretty}
+.section h2,.card-body h3{ text-align:left }
+.section .eyebrow{font-size:11px;letter-spacing:2px;line-height:1.5;margin-bottom:14px}
+.card-kicker{display:block;font-size:11px;letter-spacing:1.3px;line-height:1.5}
+.editorial-card{display:flex;flex-direction:column;border-color:#cddfe9;border-radius:12px;box-shadow:0 5px 20px rgb(7 59 92 / 5%);transition:box-shadow .2s,border-color .2s}
+.editorial-card:hover,.editorial-card:focus-visible{border-color:var(--azure);box-shadow:0 8px 24px rgb(7 59 92 / 10%)}
+.card-body{display:flex;flex:1;flex-direction:column;align-items:flex-start;gap:12px;padding:24px}
+.card-body h3,.card-body p{margin:0;width:100%}
+.card-body h3{text-wrap:pretty}
+.card-body>.text-link{margin-top:auto;padding-top:4px}
+.destination-card{border:1px solid #cddfe9;border-radius:12px;box-shadow:0 5px 20px rgb(7 59 92 / 5%)}
+.feature-copy{text-align:left}
+.feature-copy .button-primary{background:transparent;color:var(--deep);border:1px solid rgb(7 59 92 / 55%);border-radius:8px}
+.feature-list>span{display:flex;align-items:flex-start;gap:10px;line-height:1.7}
+.feature-list svg{flex-shrink:0;margin-top:4px}
+@media(min-width:601px){.card-body h3{min-height:3.6em}}
+@media(max-width:600px){.card-body{padding:22px}.section-head h2,.feature-copy h2{width:100%}}
