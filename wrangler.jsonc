@@ -1,1 +1,19 @@
-{"$schema":"node_modules/wrangler/config-schema.json","name":"riviera-evasion","main":".open-next/worker.js","compatibility_date":"2026-11-03","compatibility_flags":["nodejs_compat"],"assets":{"directory":".open-next/assets","binding":"ASSETS"},"services":[{"binding":"WORKER_SELF_REFERENCE","service":"riviera-evasion"}]}
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "helena-lebrun",
+  "main": ".open-next/worker.js",
+  "compatibility_date": "2026-11-03",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "helena-lebrun"
+    }
+  ]
+}
